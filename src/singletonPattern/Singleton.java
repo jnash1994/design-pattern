@@ -14,6 +14,9 @@ private static Singleton uniqueInstance;
     public static Singleton getUniqueInstance(){
         if(uniqueInstance==null){
             uniqueInstance=new Singleton();
+            System.out.println("實例化成功!!");
+        }else{
+            System.out.println("已有物件!!實例化失敗");
         }
         return uniqueInstance;
     }
